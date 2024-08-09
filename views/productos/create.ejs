@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Producto</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Crear Producto</h2>
+        <form action="/productos/<%= categoriaId %>/crear" method="POST">
+            <div class="form-group">
+                <label for="nombre_producto">Nombre del Producto:</label>
+                <input type="text" class="form-control" id="nombre_producto" name="nombre_producto" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <textarea class="form-control" id="descripcion" name="descripcion"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="precio">Precio:</label>
+                <input type="number" step="0.01" class="form-control" id="precio" name="precio" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear</button>
+        </form>
+    </div>
+</body>
+</html>

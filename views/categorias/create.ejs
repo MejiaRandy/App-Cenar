@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crear Categoría</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Crear Categoría</h2>
+        <form action="/categorias/crear" method="POST">
+            <div class="form-group">
+                <label for="nombre_categoria">Nombre de la Categoría:</label>
+                <input type="text" class="form-control" id="nombre_categoria" name="nombre_categoria" required>
+            </div>
+            <div class="form-group">
+                <label for="descripcion">Descripción:</label>
+                <textarea class="form-control" id="descripcion" name="descripcion"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Crear</button>
+        </form>
+    </div>
+</body>
+</html>

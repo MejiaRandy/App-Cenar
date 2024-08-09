@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Registro</h2>
+        <form action="/register" method="POST">
+            <div class="form-group">
+                <label for="nombre">Nombre:</label>
+                <input type="text" class="form-control" id="nombre" name="nombre" required>
+            </div>
+            <div class="form-group">
+                <label for="apellido">Apellido:</label>
+                <input type="text" class="form-control" id="apellido" name="apellido" required>
+            </div>
+            <div class="form-group">
+                <label for="telefono">Teléfono:</label>
+                <input type="text" class="form-control" id="telefono" name="telefono" required>
+            </div>
+            <div class="form-group">
+                <label for="correo">Correo:</label>
+                <input type="email" class="form-control" id="correo" name="correo" required>
+            </div>
+            <div class="form-group">
+                <label for="nombre_usuario">Nombre de usuario:</label>
+                <input type="text" class="form-control" id="nombre_usuario" name="nombre_usuario" required>
+            </div>
+            <div class="form-group">
+                <label for="contrasena">Contraseña:</label>
+                <input type="password" class="form-control" id="contrasena" name="contrasena" required>
+            </div>
+            <div class="form-group">
+                <label for="rol">Rol:</label>
+                <select class="form-control" id="rol" name="rol" required>
+                    <option value="cliente">Cliente</option>
+                    <option value="delivery">Delivery</option>
+                    <option value="comercio">Comercio</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Registrar</button>
+        </form>
+    </div>
+</body>
+</html>
